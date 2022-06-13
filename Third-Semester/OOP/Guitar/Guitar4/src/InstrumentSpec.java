@@ -3,13 +3,11 @@ public abstract class InstrumentSpec{
     private String model;
     private Type type;
     private Wood backWood, topWood;
-    private int numStrings;
 
-    public InstrumentSpec(Builder builder, String model, Type type, int numStrings, Wood backWood, Wood topWood){
+    public InstrumentSpec(Builder builder, String model, Type type, Wood backWood, Wood topWood){
         this.builder = builder;
         this.model = model;
         this.type = type;
-        this.numStrings = numStrings;
         this.backWood = backWood;
         this.topWood = topWood;
     }
@@ -24,10 +22,6 @@ public abstract class InstrumentSpec{
     
     public Type getType(){
         return type;
-    }
-    
-    public int getNumStrings(){
-        return numStrings;
     }
 
     public Wood getBackWood(){
@@ -46,9 +40,6 @@ public abstract class InstrumentSpec{
             return false;
         }
         if (type != otherSpec.type){
-            return false;
-        }
-        if (numStrings != otherSpec.numStrings){
             return false;
         }
         if (backWood != otherSpec.backWood){
