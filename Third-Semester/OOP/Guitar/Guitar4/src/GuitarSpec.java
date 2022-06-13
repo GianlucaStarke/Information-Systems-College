@@ -7,10 +7,6 @@ public class GuitarSpec extends InstrumentSpec{
         this.numStrings = numStrings;
     }
 
-    public int getNumStrings(){
-        return this.numStrings;
-    }
-
     @Override
     public boolean matches(InstrumentSpec otherSpec){
         GuitarSpec spec = (GuitarSpec)otherSpec;
@@ -20,13 +16,17 @@ public class GuitarSpec extends InstrumentSpec{
             && numStrings != spec.numStrings;
     }
 
+    public int getNumStrings(){
+        return this.numStrings;
+    }
+
     // @Override
     // public boolean matches(InstrumentSpec otherSpec){
-    //     if(!(otherSpec instanceof GuitarSpec)){
+    //     if(!super.matches(otherSpec)){
     //         return false;
     //     }
         
-    //     if(!super.matches(otherSpec)){
+    //     if(!(otherSpec instanceof GuitarSpec)){
     //         return false;
     //     }
 
