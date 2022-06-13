@@ -1,10 +1,12 @@
-public class Instrument {
+public abstract class Instrument{
     private String serialNumber;
     private double price;
+    private InstrumentSpec spec;
 
-    public Instrument(String serialNumber, double price){
+    public Instrument(String serialNumber, double price, InstrumentSpec spec){
         this.serialNumber = serialNumber;
         this.price = price;
+        this.spec = spec;
     }
 
     public void setPrice(float price){
@@ -17,5 +19,9 @@ public class Instrument {
 
     public double getPrice(){
         return this.price;
+    }
+
+    public InstrumentSpec getSpec(){
+        return this.spec;
     }
 }
