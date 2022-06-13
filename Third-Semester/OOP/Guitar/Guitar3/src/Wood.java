@@ -30,6 +30,8 @@ public enum Wood {
 
             case SITKA:
                 return "sitka";
-        };
+            default:
+                return "any";
+        }
     }
 }

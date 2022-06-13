@@ -12,6 +12,6 @@ public enum Type {
             
             default:
                 return "electric";
-        };
+        }
     }
 }
