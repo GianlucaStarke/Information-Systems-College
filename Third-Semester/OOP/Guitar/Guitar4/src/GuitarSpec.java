@@ -11,9 +11,9 @@ public class GuitarSpec extends InstrumentSpec{
     public boolean matches(InstrumentSpec otherSpec){
         GuitarSpec spec = (GuitarSpec)otherSpec;
         
-        return !super.matches(otherSpec)
-            && !(otherSpec instanceof GuitarSpec)
-            && numStrings != spec.numStrings;
+        return super.matches(otherSpec)
+            && (otherSpec instanceof GuitarSpec)
+            && numStrings == spec.numStrings;
     }
 
     public int getNumStrings(){

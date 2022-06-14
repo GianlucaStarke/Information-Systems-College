@@ -11,9 +11,9 @@ public class MandolinSpec extends InstrumentSpec{
     public boolean matches(InstrumentSpec otherSpec) {
         MandolinSpec spec = (MandolinSpec)otherSpec;
 
-        return !super.matches(otherSpec)
-            && !(otherSpec instanceof MandolinSpec)
-            && !style.equals(spec.style);
+        return super.matches(otherSpec)
+            && (otherSpec instanceof MandolinSpec)
+            && style.equals(spec.style);
     }
 
     public Style getStyle(){
