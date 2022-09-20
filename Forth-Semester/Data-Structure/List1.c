@@ -4,7 +4,7 @@ char keanu();
 
 int main(){
 
-    printf("%c", keanu());
+    printf("%c\n", keanu());
 
     return 0
 }
