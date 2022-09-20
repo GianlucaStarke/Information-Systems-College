@@ -9,5 +9,11 @@ int main(){
     return 0
 }
 
-// Beecrowd: 3342 – Keanu
-char keanu(){}
+/*
+ * Beecrowd: 3342 – Keanu
+ *
+ * https://www.beecrowd.com.br/judge/en/problems/view/3342
+ */
+char keanu(){
+    
+}
