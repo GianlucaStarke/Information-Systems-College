@@ -25,3 +25,12 @@ void keanu(){
     
     printf("%d casas brancas e %d casas pretas\n", brancos, pretos);
 }
+
+/*
+ * Beecrowd: 3068 - Meteoros
+ *
+ * https://www.beecrowd.com.br/judge/en/problems/view/3068
+ */
+void meteoros(){
+    
+}
