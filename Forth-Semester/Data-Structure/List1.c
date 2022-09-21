@@ -9,7 +9,35 @@ void surnameIsNotEasy();
 
 int main(){
 
+    printf("------------------------\n");
+    printf("-playingDartsByDistance-\n");
+    printf("------------------------\n\n");
+
+    playingDartsByDistance();
+    
+    printf("------------------------\n");
+    printf("-keanu------------------\n");
+    printf("------------------------\n\n");
+
     keanu();
+
+    printf("------------------------\n");
+    printf("-meteoros---------------\n");
+    printf("------------------------\n\n");
+    
+    meteoros();
+    
+    printf("------------------------\n");
+    printf("-sodaSurpler------------\n");
+    printf("------------------------\n\n");
+
+    sodaSurpler();
+
+    printf("------------------------\n");
+    printf("-surnameIsNotEasy-------\n");
+    printf("------------------------\n\n");
+
+    surnameIsNotEasy();
 
     return 0
 }
