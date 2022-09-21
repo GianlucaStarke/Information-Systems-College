@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-char keanu();
+void playingDartsByDistance();
+void keanu();
+void meteoros();
+void sodaSurpler();
+void surnameIsNotEasy();
 
 int main(){
 
@@ -9,6 +13,13 @@ int main(){
 
     return 0
 }
+
+/*
+ * Beecrowd: 3037 - Playing Darts by Distance
+ *
+ * https://www.beecrowd.com.br/judge/en/problems/view/3037
+ */
+void playingDartsByDistance(){}
 
 /*
  * Beecrowd: 3342 – Keanu
@@ -31,6 +42,18 @@ void keanu(){
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3068
  */
-void meteoros(){
-    
-}
+void meteoros(){}
+
+/*
+ * Beecrowd: 3214 - Soda Surpler
+ *
+ * https://www.beecrowd.com.br/judge/en/problems/view/3214
+ */
+void sodaSurpler(){}
+
+/*
+ * Beecrowd: 3358 - Surname is not Easy
+ *
+ * https://www.beecrowd.com.br/judge/en/problems/view/3358
+ */
+void surnameIsNotEasy(){}
