@@ -66,7 +66,7 @@ void playingDartsByDistance(){
             maria += x * d;
         }
         
-        printf("%s\n", joao >= maria ? "JOAO" : "MARIA");
+        printf("%s\n", joao > maria ? "JOAO" : "MARIA");
     }
 }
 
