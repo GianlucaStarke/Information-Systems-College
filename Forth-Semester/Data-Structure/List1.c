@@ -93,6 +93,11 @@ void keanu(){
  */
 void meteoros(){}
 
+struct point{
+    int x;
+    int y;
+};
+
 /*
  * Beecrowd: 3214 - Soda Surpler
  *
