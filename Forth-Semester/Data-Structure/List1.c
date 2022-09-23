@@ -7,6 +7,9 @@ void meteoros();
 void sodaSurpler();
 void surnameIsNotEasy();
 
+struct Fazenda;
+struct Meteoro;
+
 int main(){
 
     printf("------------------------\n");
@@ -93,10 +96,17 @@ void keanu(){
  */
 void meteoros(){}
 
-struct point{
+struct Fazenda{
+    int x1;
+    int x2;
+    int y1;
+    int y2;
+}
+
+struct Meteoro{
     int x;
     int y;
-};
+}
 
 /*
  * Beecrowd: 3214 - Soda Surpler
