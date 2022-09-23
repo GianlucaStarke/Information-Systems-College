@@ -19,8 +19,6 @@ typedef struct{
     int x;
     int y;
 }Meteoro;
-
-int verificarFazenda(Fazenda*);
 // ------------------------
 
 int main(){
@@ -118,8 +116,6 @@ void meteoros(){
         
         if(fazenda.x1 == 0 && fazenda.x2 == 0 && fazenda.y1 == 0 && fazenda.y2 == 0) break;
         
-        verificarFazenda(&fazenda);
-        
         scanf("%d", &qtd_meteoros);
         
         qtd_meteoros_fazenda = 0;
@@ -136,20 +132,6 @@ void meteoros(){
         
         printf("Teste %d\n%d\n", count, qtd_meteoros_fazenda);
     };
-}
-
-int verificarFazenda(Fazenda *fazenda){
-    int aux = fazenda->x1;
-
-    fazenda->x1 = fazenda->x1 < fazenda->x2 ? fazenda->x1 : fazenda->x2;
-    fazenda->x2 = fazenda->x2 > aux ? fazenda->x2 : aux;
-
-    aux = fazenda->y1;
-
-    fazenda->y1 = fazenda->y1 > fazenda->y2 ? fazenda->y1 : fazenda->y2;
-    fazenda->y2 = fazenda->y2 < aux ? fazenda->y2 : aux;
-
-    return 1;
 }
 
 /*
