@@ -107,12 +107,17 @@ void meteoros(){
         
         scanf("%d", &qtd_meteoros);
         
-        printf("Teste %d", count);
-        
         for(int i = 0; i < qtd_meteoros; i++){
             scanf("%d %d", &meteoro.x, &meteoro.y);
+            qtd_meteoros_fazenda += 
+                fazenda.x1 <= meteoro.x && meteoro.x <= fazenda.x2
+                && fazenda.y1 >= meteoro.y && meteoro.y >= fazenda.y2
+                ? 1
+                : 0
+            ;
         }
         
+        printf("Teste %d\n%d\n", count, qtd_meteoros_fazenda);
     };
 }
 
