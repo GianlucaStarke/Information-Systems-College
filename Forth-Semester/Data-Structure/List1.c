@@ -94,7 +94,17 @@ void keanu(){
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3068
  */
-void meteoros(){}
+void meteoros(){
+    struct Fazenda fazenda;
+    struct Meteoro meteoro;
+    int count;
+    
+    do{
+        scanf("%d %d %d %d", &fazenda.x1, &fazenda.y1, &fazenda.x2, &fazenda.y2);
+    }while(fazenda.x1 != 0 && fazenda.x2 != 0 && fazenda.y1 != 0 && fazenda.y2 != 0)
+ 
+    return 0;
+}
 
 struct Fazenda{
     int x1;
