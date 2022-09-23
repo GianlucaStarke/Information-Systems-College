@@ -97,15 +97,23 @@ void keanu(){
 void meteoros(){
     struct Fazenda fazenda;
     struct Meteoro meteoro;
-    int count;
+    int qtd_meteoros_fazenda;
+    int qtd_meteoros;
     
-    do{
+    for(int count = 1; 1; count++){
         scanf("%d %d %d %d", &fazenda.x1, &fazenda.y1, &fazenda.x2, &fazenda.y2);
         
-        if(fazenda.x1 == 0 && fazenda.x2 == 0 && fazenda.y1 == 0 && fazenda.y2 == 0) break;        
-    }while(1);
- 
-    return 0;
+        if(fazenda.x1 == 0 && fazenda.x2 == 0 && fazenda.y1 == 0 && fazenda.y2 == 0) break;
+        
+        scanf("%d", &qtd_meteoros);
+        
+        printf("Teste %d", count);
+        
+        for(int i = 0; i < qtd_meteoros; i++){
+            scanf("%d %d", &meteoro.x, &meteoro.y);
+        }
+        
+    };
 }
 
 struct Fazenda{
