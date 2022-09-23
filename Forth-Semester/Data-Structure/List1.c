@@ -95,6 +95,7 @@ void keanu(){
  * https://www.beecrowd.com.br/judge/en/problems/view/3068
  */
 void meteoros(){
+    // Precisa declarar memória usada pelas estruturas
     struct Fazenda fazenda;
     struct Meteoro meteoro;
     int qtd_meteoros_fazenda;
