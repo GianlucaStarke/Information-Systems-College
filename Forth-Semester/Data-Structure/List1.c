@@ -7,8 +7,17 @@ void meteoros();
 void sodaSurpler();
 void surnameIsNotEasy();
 
-struct Fazenda;
-struct Meteoro;
+typedef struct{
+    int x1;
+    int x2;
+    int y1;
+    int y2;
+}Fazenda;
+
+typedef struct{
+    int x;
+    int y;
+}Meteoro;
 
 int main(){
 
@@ -96,8 +105,8 @@ void keanu(){
  */
 void meteoros(){
     // Precisa declarar memória usada pelas estruturas
-    struct Fazenda fazenda;
-    struct Meteoro meteoro;
+    Fazenda fazenda;
+    Meteoro meteoro;
     int qtd_meteoros_fazenda;
     int qtd_meteoros;
     
@@ -121,18 +130,6 @@ void meteoros(){
         printf("Teste %d\n%d\n", count, qtd_meteoros_fazenda);
     };
 }
-
-struct Fazenda{
-    int x1;
-    int x2;
-    int y1;
-    int y2;
-};
-
-struct Meteoro{
-    int x;
-    int y;
-};
 
 /*
  * Beecrowd: 3214 - Soda Surpler
