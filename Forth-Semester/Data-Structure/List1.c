@@ -7,6 +7,7 @@ void meteoros();
 void sodaSurpler();
 void surnameIsNotEasy();
 
+// Meteoros----------------
 typedef struct{
     int x1;
     int x2;
@@ -18,6 +19,7 @@ typedef struct{
     int x;
     int y;
 }Meteoro;
+// ------------------------
 
 int main(){
 
