@@ -19,6 +19,8 @@ typedef struct{
     int x;
     int y;
 }Meteoro;
+
+void verificarFazenda(Fazenda*);
 // ------------------------
 
 int main(){
@@ -106,7 +108,6 @@ void keanu(){
  * https://www.beecrowd.com.br/judge/en/problems/view/3068
  */
 void meteoros(){
-    // Precisa declarar memória usada pelas estruturas
     Fazenda fazenda;
     Meteoro meteoro;
     int qtd_meteoros_fazenda;
@@ -116,6 +117,8 @@ void meteoros(){
         scanf("%d %d %d %d", &fazenda.x1, &fazenda.y1, &fazenda.x2, &fazenda.y2);
         
         if(fazenda.x1 == 0 && fazenda.x2 == 0 && fazenda.y1 == 0 && fazenda.y2 == 0) break;
+        
+        verificarFazenda(&fazenda);
         
         scanf("%d", &qtd_meteoros);
         
@@ -133,6 +136,18 @@ void meteoros(){
         
         printf("Teste %d\n%d\n", count, qtd_meteoros_fazenda);
     };
+}
+
+void verificarFazenda(Fazenda *fazenda){
+    int aux = fazenda->x1;
+
+    fazenda->x1 = fazenda->x1 < fazenda->x2 ? fazenda->x1 : fazenda->x2;
+    fazenda->x2 = fazenda->x2 > aux ? fazenda->x2 : aux;
+
+    aux = fazenda->y1;
+
+    fazenda->y1 = fazenda->y1 > fazenda->y2 ? fazenda->y1 : fazenda->y2;
+    fazenda->y2 = fazenda->y2 < aux ? fazenda->y2 : aux;
 }
 
 /*
