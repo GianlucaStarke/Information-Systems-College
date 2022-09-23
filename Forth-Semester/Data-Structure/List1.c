@@ -101,7 +101,9 @@ void meteoros(){
     
     do{
         scanf("%d %d %d %d", &fazenda.x1, &fazenda.y1, &fazenda.x2, &fazenda.y2);
-    }while(fazenda.x1 != 0 && fazenda.x2 != 0 && fazenda.y1 != 0 && fazenda.y2 != 0)
+        
+        if(fazenda.x1 == 0 && fazenda.x2 == 0 && fazenda.y1 == 0 && fazenda.y2 == 0) break;        
+    }while(1);
  
     return 0;
 }
