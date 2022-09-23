@@ -117,6 +117,8 @@ void meteoros(){
         
         scanf("%d", &qtd_meteoros);
         
+        qtd_meteoros_fazenda = 0;
+        
         for(int i = 0; i < qtd_meteoros; i++){
             scanf("%d %d", &meteoro.x, &meteoro.y);
             qtd_meteoros_fazenda += 
