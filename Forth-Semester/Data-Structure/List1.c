@@ -127,12 +127,12 @@ struct Fazenda{
     int x2;
     int y1;
     int y2;
-}
+};
 
 struct Meteoro{
     int x;
     int y;
-}
+};
 
 /*
  * Beecrowd: 3214 - Soda Surpler
