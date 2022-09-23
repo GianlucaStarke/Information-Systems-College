@@ -20,7 +20,7 @@ typedef struct{
     int y;
 }Meteoro;
 
-void verificarFazenda(Fazenda*);
+int verificarFazenda(Fazenda*);
 // ------------------------
 
 int main(){
@@ -138,7 +138,7 @@ void meteoros(){
     };
 }
 
-void verificarFazenda(Fazenda *fazenda){
+int verificarFazenda(Fazenda *fazenda){
     int aux = fazenda->x1;
 
     fazenda->x1 = fazenda->x1 < fazenda->x2 ? fazenda->x1 : fazenda->x2;
@@ -148,6 +148,8 @@ void verificarFazenda(Fazenda *fazenda){
 
     fazenda->y1 = fazenda->y1 > fazenda->y2 ? fazenda->y1 : fazenda->y2;
     fazenda->y2 = fazenda->y2 < aux ? fazenda->y2 : aux;
+
+    return 1;
 }
 
 /*
