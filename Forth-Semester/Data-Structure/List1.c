@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-void playingDartsByDistance();
-void keanu();
-void meteoros();
-void sodaSurpler();
-void surnameIsNotEasy();
+int playingDartsByDistance();
+int keanu();
+int meteoros();
+int sodaSurpler();
+int surnameIsNotEasy();
 
 // Meteoros----------------
 typedef struct{
@@ -61,7 +61,7 @@ int main(){
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3037
  */
-void playingDartsByDistance(){
+int playingDartsByDistance(){
     int n, x, d, maria, joao;
     
     scanf("%d", &n);
@@ -82,6 +82,8 @@ void playingDartsByDistance(){
         
         printf("%s\n", joao > maria ? "JOAO" : maria > joao ? "MARIA" : "EMPATE");
     }
+    
+    return 1;
 }
 
 /*
@@ -89,7 +91,7 @@ void playingDartsByDistance(){
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3342
  */
-void keanu(){
+int keanu(){
     int n, brancos, pretos;
     
     scanf("%d", &n);
@@ -98,6 +100,8 @@ void keanu(){
     pretos = floor(n * (n / 2.0));
     
     printf("%d casas brancas e %d casas pretas\n", brancos, pretos);
+    
+    return 1;
 }
 
 /*
@@ -105,7 +109,7 @@ void keanu(){
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3068
  */
-void meteoros(){
+int meteoros(){
     Fazenda fazenda;
     Meteoro meteoro;
     int qtd_meteoros_fazenda;
@@ -132,6 +136,8 @@ void meteoros(){
         
         printf("Teste %d\n%d\n", count, qtd_meteoros_fazenda);
     };
+    
+    return 1;
 }
 
 /*
@@ -139,11 +145,26 @@ void meteoros(){
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3214
  */
-void sodaSurpler(){}
+int sodaSurpler(){
+    int e, f, c, sodas;
+    
+    scanf("%d %d %d", &e, &f, &c);
+    f += e;
+    
+    for(sodas = 0; f >= c; sodas++){
+        f -= c - 1;
+    }
+    
+    printf("%d\n", sodas);
+ 
+    return 1;
+}
 
 /*
  * Beecrowd: 3358 - Surname is not Easy
  *
  * https://www.beecrowd.com.br/judge/en/problems/view/3358
  */
-void surnameIsNotEasy(){}
+int surnameIsNotEasy(){
+    return 1;
+}
