@@ -1,6 +1,6 @@
 #include <stdio.h>
  
-int main() 
+int main(){
     /*
      * Beecrowd: 3214 - Soda Surpler
      *
