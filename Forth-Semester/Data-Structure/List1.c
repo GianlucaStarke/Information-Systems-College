@@ -171,7 +171,7 @@ int sodaSurpler(){
  */
 int surnameIsNotEasy(){
     int qtd_nomes, dificil, consoantes_seguidas;
-    char nome[42];
+    char nome[43];
     
     scanf("%d", &qtd_nomes);
     
@@ -196,7 +196,7 @@ int surnameIsNotEasy(){
 }
 
 int ehVogal(char letra){
-    char vowels[10] = "aeiouAEIOU";
+    char vowels[11] = "aeiouAEIOU";
     
     for(int i = 0; vowels[i] > 0; i++){
         if(letra == vowels[i]) return 1;
