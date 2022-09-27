@@ -57,7 +57,7 @@ int main(){
 
     surnameIsNotEasy();
 
-    return 0
+    return 0;
 }
 
 /*
