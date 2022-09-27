@@ -13,6 +13,12 @@ typedef struct{
 }Meteoro;
 
 int main(){
+    /*
+     * Beecrowd: 3068 - Meteoros
+     *
+     * https://www.beecrowd.com.br/judge/en/problems/view/3068
+     */
+
     Fazenda fazenda;
     Meteoro meteoro;
     int qtd_meteoros_fazenda;

@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <math.h>
- 
+
 int main(){
+    /*
+     * Beecrowd: 3342 – Keanu
+     *
+     * https://www.beecrowd.com.br/judge/en/problems/view/3342
+     */
+
     int n, brancos, pretos;
     
     scanf("%d", &n);

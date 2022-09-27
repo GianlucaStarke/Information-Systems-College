@@ -1,6 +1,12 @@
 #include <stdio.h>
  
 int main(){
+    /*
+     * Beecrowd: 3037 - Playing Darts by Distance
+     *
+     * https://www.beecrowd.com.br/judge/en/problems/view/3037
+     */
+
     int n, x, d, maria, joao;
     
     scanf("%d", &n);
