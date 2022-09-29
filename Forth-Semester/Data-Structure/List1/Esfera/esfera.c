@@ -15,7 +15,7 @@ double raio(Esfera* esfera){
 }
 
 double area(Esfera* esfera){
-    return PI * pow(raio(esfera), 2);
+    return 4.0 * PI * pow(raio(esfera), 2);
 }
 
 double volume(Esfera* esfera){
