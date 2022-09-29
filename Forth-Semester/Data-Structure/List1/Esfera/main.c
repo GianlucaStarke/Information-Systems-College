@@ -6,7 +6,8 @@ int main(){
     char continuar[2];
 
     while(1){
-        scanf("Insira o diâmetro da esfera: %lf\n\n", &diametro);
+        printf("Insira o diâmetro da esfera: ");
+        scanf("%lf\n\n", &diametro);
 
         esfera = cria(diametro);
 
