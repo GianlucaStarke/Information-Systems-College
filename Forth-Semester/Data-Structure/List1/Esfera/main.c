@@ -3,7 +3,7 @@
 int main(){
     Esfera esfera;
     double diametro;
-    char continuar[2];
+    char continuar = malloc(1);
 
     while(1){
         scanf("Insira o diâmetro da esfera: %lf\n\n", &diametro);
@@ -17,7 +17,7 @@ int main(){
 
         scanf("Deseja inserir mais uma esfera?(s/n)\n\n", &continuar[0]);
 
-        if(continuar[0] == 'n') break;
+        if(continuar[0] != 's') break;
     }
 
     return 0;
