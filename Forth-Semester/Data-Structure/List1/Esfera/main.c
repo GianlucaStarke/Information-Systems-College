@@ -3,9 +3,9 @@
 int main(){
     Esfera* esfera;
     double diametro;
-    char continuar[2] = {'s', '\0'};
+    char continuar = 's';
 
-    while(continuar[0] == 's'){
+    while(continuar == 's'){
         printf("Insira o diâmetro da esfera: ");
         scanf("%lf", &diametro);
         
@@ -21,7 +21,7 @@ int main(){
         printf("Volume: %.2lf\n\n", volume(esfera));
 
         printf("Deseja inserir mais uma esfera?(s/n) ");
-        scanf("%c", &continuar[0]);
+        scanf(" %c", &continuar);
         
         printf("\n");
     }
