@@ -3,7 +3,7 @@
 const double PI = 3.141593;
 
 Esfera* cria(double diametro){
-    Esfera* esfera;
+    Esfera* esfera = (Esfera*) malloc(sizeof(Esfera));
     
     esfera->diametro = diametro;
 
