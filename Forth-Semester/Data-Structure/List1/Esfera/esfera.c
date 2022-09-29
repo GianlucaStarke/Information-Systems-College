@@ -1,21 +1,23 @@
 #include "esfera.h"
 
-Esfera cria(double diametro){
-    Esfera esfera = (Esfera) malloc(sizeof(Esfera));
+const double PI = 3.141593;
 
-    esfera.diametro = diametro;
+Esfera* cria(double diametro){
+    Esfera* esfera;
+    
+    esfera->diametro = diametro;
 
     return esfera;
 }
 
-double raio(Esfera esfera){
-    return esfera.diametro / 2;
+double raio(Esfera* esfera){
+    return esfera->diametro / 2;
 }
 
-double area(Esfera esfera){
+double area(Esfera* esfera){
     return PI * pow(raio(esfera), 2);
 }
 
-double volume(Esfera esfera){
+double volume(Esfera* esfera){
     return (4.0 * PI * pow(raio(esfera), 3)) / 3.0;
 }

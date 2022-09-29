@@ -1,9 +1,9 @@
 #include "esfera.h"
 
 int main(){
-    Esfera esfera;
+    Esfera* esfera;
     double diametro;
-    char continuar = malloc(1);
+    char continuar[2];
 
     while(1){
         scanf("Insira o diâmetro da esfera: %lf\n\n", &diametro);
@@ -15,7 +15,7 @@ int main(){
         printf("Area: %lf\n", area(esfera));
         printf("Volume: %lf\n\n", volume(esfera));
 
-        scanf("Deseja inserir mais uma esfera?(s/n)\n\n", &continuar[0]);
+        scanf("Deseja inserir mais uma esfera?(s/n) %c\n\n", &continuar[0]);
 
         if(continuar[0] != 's') break;
     }
